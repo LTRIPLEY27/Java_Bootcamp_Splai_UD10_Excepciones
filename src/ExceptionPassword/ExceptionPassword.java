@@ -14,7 +14,10 @@ public class ExceptionPassword extends Exception {
 	public String getMessage() {
 		String message = " ";
 		switch(exceptionCode) {
-			
+			case 1:
+				message = "La longitud mínima es de 8 carácteres";
+			case 2:
+				message = "";
 		}
 		
 		return message;
