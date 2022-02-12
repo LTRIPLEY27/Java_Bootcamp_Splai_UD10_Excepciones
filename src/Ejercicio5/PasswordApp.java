@@ -3,11 +3,15 @@ package Ejercicio5;
 public class PasswordApp {
 
 	public static void main(String[] args) {
-		Password pass = new Password(9);
+		Password pass = new Password(10);
 		
+		//pass.createPassword();
+		//pass.getPassword();
+
 		pass.createPassword();
-		pass.getPassword();
 		System.out.println(pass.getPassword());
+		System.out.println(pass.esFuerte());
+	
 	}
 
 }

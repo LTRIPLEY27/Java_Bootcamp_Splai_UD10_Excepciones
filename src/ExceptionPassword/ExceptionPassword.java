@@ -17,7 +17,7 @@ public class ExceptionPassword extends Exception {
 			case 1:
 				message = "La longitud mínima es de 8 carácteres";
 			case 2:
-				message = "";
+				message = "lA LONGITUD NO PUEDE SUPERAR MÁS DE 30 CARACTERES";
 		}
 		
 		return message;
