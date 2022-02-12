@@ -1,4 +1,4 @@
-package ExceptionPassword;
+package Ejercicio5.ExceptionPassword;
 
 public class ExceptionPassword extends Exception {
 
