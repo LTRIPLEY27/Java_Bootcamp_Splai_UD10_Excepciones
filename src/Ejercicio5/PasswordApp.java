@@ -1,16 +1,15 @@
 package Ejercicio5;
+/*
+ * @utor: Isabel Calzadilla
+ * UD10  - Exceptions: Ejercicio 5, Password Generator
+ * */
+import java.util.ArrayList;
 
 public class PasswordApp {
 
 	public static void main(String[] args) {
-		Password pass = new Password(10);
 		
-
-
-		pass.createPassword();
-		System.out.println(pass.getPassword());
-		System.out.println(pass.esFuerte());
-	
+		Controlador.start();	
 	}
 
 }

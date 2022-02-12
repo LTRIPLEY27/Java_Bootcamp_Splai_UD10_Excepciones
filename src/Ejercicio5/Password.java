@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.regex.Pattern;
 
+import Ejercicio5.ExceptionPassword.ExceptionPassword;
+
 public class Password {
 	private String password;
 	private int longitud;
@@ -11,12 +13,22 @@ public class Password {
 	// DEFECTO
 	public Password() {
 		this.password = "";
-		this.longitud = 7;
+		this.longitud = 8;
 	}
 	
-	// CONSTRUCTOR QUE ACTUALIZA LA LONGITUD
+	// CONSTRUCTOR QUE ACTUALIZA LA LONGITUD E INSERTO DENTRO DE UN TRY CATCH
 		public Password(int longi) {
-			this.longitud = longi;
+			try {
+				if(longi < 8) {
+					throw new ExceptionPassword(1);
+				} else if(longi > 30) {
+					throw new ExceptionPassword(2);
+				} else {
+					this.longitud = longi;
+				}
+			}catch(Exception ex) {
+				System.out.println(ex.getMessage());
+			}
 		}
 		
 	
@@ -38,6 +50,7 @@ public class Password {
 	public int getLongitud() {
 		return longitud;
 	}
+	
 	public void setLongitud(int longitud) {
 		this.longitud = longitud;
 	}

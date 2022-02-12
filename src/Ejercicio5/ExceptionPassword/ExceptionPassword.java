@@ -16,10 +16,11 @@ public class ExceptionPassword extends Exception {
 		switch(exceptionCode) {
 			case 1:
 				message = "La longitud mínima es de 8 carácteres";
+				break;
 			case 2:
 				message = "lA LONGITUD NO PUEDE SUPERAR MÁS DE 30 CARACTERES";
+				break;
 		}
-		
 		return message;
 	}
 	
